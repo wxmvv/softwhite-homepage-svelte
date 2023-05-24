@@ -1,21 +1,30 @@
-## Developing
+# 舒白主页
 
-installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## 介绍
 
+这是一个使用 Svelte 开发的主页，主要用于展示信息和作品。第一次尝试 Svelte 体验还不错，但是 SvelteKit 还不够稳定，所以暂时使用 Vite 作为构建工具。
+
+## 使用框架
+
+- Svelte
+- Vite
+- Tailwind CSS
+- DaisyUI
+
+## 开发
+
+安装扩展
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+npm install #install dependencies
 ```
-
-## Building
-
-To create a production version of your app:
+开启服务
+```bash
+npm run dev #development server
+```
+## 打包
 
 ```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
 
