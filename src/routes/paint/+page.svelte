@@ -3,13 +3,7 @@
     <title>About Us</title>
 </svelte:head>
 
-<!-- <main class="min-h-screen flex flex-row p-16 items-center justify-start bg-milk"> -->
-	<!-- <nav class="navbar bg-milk" /> -->
-	<!-- <article class="prose prose-stone">
-		<h1>绘画</h1>
-	</article> -->
-	<div class="bg-milk">
-		<!-- <nav class="navbar bg-milk" /> -->
+	<div class="bg-base-100">
 		<div class="mx-auto max-w-2xl px-16 py-24 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-16">
 			<article class="prose prose-stone">
 				<h1>绘画</h1>
@@ -99,4 +93,3 @@
 		  </div>
 		</div>
 	  </div>
-<!-- </main> -->

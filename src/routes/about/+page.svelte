@@ -3,11 +3,11 @@
 	<title>About Us</title>
 </svelte:head>
 
-<main class="min-h-screen flex flex-row p-16 items-center justify-start bg-milk">
+<main class="min-h-screen flex flex-row p-16 items-center justify-start bg-base-100">
 	<!-- <nav class="navbar bg-milk" /> -->
 	<article class="prose md:prose-xl prose-stone">
     <!-- <div class="w-screen"></div> -->
-		<h1>关于我们：</h1>
+		<h2>关于我们：</h2>
 		<p>舒白文化成立于2023年5月的扬州。</p>
     <p>“舒”代表柔软舒适，“白”代表纯洁无暇。</p>
     <p>在这个充满压力，狂躁，焦虑的时代，我们希望能够带来片刻安宁、舒适。</p>
@@ -21,3 +21,4 @@
     </ul>
 	</article>
 </main>
+
