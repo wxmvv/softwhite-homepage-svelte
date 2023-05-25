@@ -3,7 +3,7 @@
 	<title>About Us</title>
 </svelte:head>
 
-<main class="min-h-screen flex flex-row p-16 items-center justify-start bg-base-100">
+<main class="min-h-screen flex flex-row p-16 pt-32 items-start justify-start bg-base-100">
 	<!-- <nav class="navbar bg-milk" /> -->
 	<article class="prose md:prose-xl prose-stone">
     <!-- <div class="w-screen"></div> -->
