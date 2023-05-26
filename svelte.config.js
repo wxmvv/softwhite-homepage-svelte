@@ -29,11 +29,8 @@ const config = {
             strict: true
         }),
 		paths:{
-			base: process.env.BASE_PATH,
+			base: "/softwhite-homepage-svelte"
 		}
-		// vite: {
-		// 	base: '/softwhite-homepage-svelte/'
-		// }
 
     }
 };
