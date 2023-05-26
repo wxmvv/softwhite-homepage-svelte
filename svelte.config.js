@@ -30,7 +30,8 @@ const config = {
         }),
 		paths:{
 			base: "/softwhite-homepage-svelte"
-		}
+		},
+		appDir: 'why',
 
     }
 };
