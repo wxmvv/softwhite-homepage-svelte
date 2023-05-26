@@ -18,7 +18,7 @@
 				<li><p>web H5</p></li>
 				<li><p>UI设计&前端开发</p></li>
 			</ul>
-			<a class="btn btn-secondary" href="/contact">联系我们</a>
+			<a class="btn btn-secondary" href="./contact">联系我们</a>
 
 		</article>
 	</main>
