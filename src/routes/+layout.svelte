@@ -5,14 +5,14 @@
 </script>
 <nav class="navbar fixed z-10">
     <div class="flex-1">
-        <a class="btn btn-ghost normal-case text-xl" href="/">Soft White</a>
+        <a class="btn btn-ghost normal-case text-xl" href="index">Soft White</a>
     </div>
     <div class="flex-none">
         <div class="hidden md:flex">
-            <a class="btn btn-ghost normal-case text-lg font-normal" href="/paint">Paint</a>
-            <a class="btn btn-ghost normal-case font-normal text-lg" href="/program">Program</a>
-            <a class="btn btn-ghost normal-case font-normal text-lg" href="/about">About us</a>
-            <a class="btn btn-ghost normal-case font-normal text-lg" href="/contact">Contact</a>
+            <a class="btn btn-ghost normal-case text-lg font-normal" href="paint">Paint</a>
+            <a class="btn btn-ghost normal-case font-normal text-lg" href="program">Program</a>
+            <a class="btn btn-ghost normal-case font-normal text-lg" href="about">About us</a>
+            <a class="btn btn-ghost normal-case font-normal text-lg" href="contact">Contact</a>
         </div>
         <div class="md:hidden dropdown dropdown-bottom dropdown-end">
             <label class="btn btn-square btn-ghost" tabindex="0">
