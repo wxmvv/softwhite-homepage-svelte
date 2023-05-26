@@ -1,6 +1,9 @@
 // import adapter from '@sveltejs/adapter-auto';
 import adapter from '@sveltejs/adapter-static';
 
+// module.exports = {
+// 	publicPath:"./"
+// }
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// kit: {
@@ -16,6 +19,7 @@ const config = {
 	// 	adapter: adapter(),
 
 	// }
+	publicPath:"./",
 	kit: {
         adapter: adapter({
             // default options are shown. On some platforms
@@ -28,5 +32,11 @@ const config = {
         })
     }
 };
+// module.exports = {
+// 	publicPath: process.env.NODE_ENV === 'production'
+// 	  ? '/production-sub-path/'
+// 	  : '/'
+//   }
+
 
 export default config;
