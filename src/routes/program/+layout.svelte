@@ -1,7 +1,15 @@
 <script>
 	// import '../app.css';
     // export const prerender = true;
+    // import ThemeChange from "@components/ThemeChange.svelte"
+//     import { onMount } from 'svelte'
+//     import { themeChange } from 'theme-change'
 
+// // NOTE: the element that is using one of the theme attributes must be in the DOM on mount
+//     onMount(() => {
+//      themeChange(false)
+//   // 👆 false parameter is required for svelte
+//     })
     
 </script>
 
@@ -34,7 +42,7 @@
 
 <slot />
 
-<footer class="footer footer-center p-8 text-base-content rounded" data-theme="">
+<footer class="footer footer-center p-8 text-base-content rounded">
     <div>
         <div class="flex flex-row gap-6">
             <a class="link link-hover" href="/about">About us</a>

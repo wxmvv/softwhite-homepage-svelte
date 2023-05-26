@@ -1,6 +1,7 @@
 <!-- about page -->
 <svelte:head>
 	<title>About Us</title>
+	
 </svelte:head>
 
 <div class="min-h-screen relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
@@ -18,6 +19,7 @@
 				<li><p>UI设计&前端开发</p></li>
 			</ul>
 			<a class="btn btn-secondary" href="/contact">联系我们</a>
+
 		</article>
 	</main>
 	

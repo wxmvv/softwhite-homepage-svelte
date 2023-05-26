@@ -1,6 +1,5 @@
 <script>
-	// import '../app.css';
-    // export const prerender = true;
+
 </script>
 
 <nav class="navbar bg-base-100 fixed z-10">

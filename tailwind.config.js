@@ -18,7 +18,7 @@ export default {
     require('@tailwindcss/aspect-ratio')],
   daisyui: {
       // themes: ["light", "dark", "cupcake", "bumblebee", "emerald", "corporate", "synthwave", "retro", "cyberpunk", "valentine", "halloween", "garden", "forest", "aqua", "lofi", "pastel", "fantasy", "wireframe", "black", "luxury", "dracula", "cmyk", "autumn", "business", "acid", "lemonade", "night", "coffee", "winter"],
-    themes: ["light","business",{"softmilk": {
+    themes: ["light","dark","business",{"softmilk": {
       "primary": "#7a736d",
       "secondary": "#463AA2",     
       "accent": "#C148AC",       
