@@ -29,9 +29,13 @@ const config = {
             strict: true
         }),
 		paths:{
+			//github page使用
 			base: "/softwhite-homepage-svelte"
+			//默认使用
+			// base: "./"
 		},
 		appDir: 'why',
+		//默认_app github page无法识别
 
     }
 };

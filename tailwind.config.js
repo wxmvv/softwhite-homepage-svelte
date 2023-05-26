@@ -6,7 +6,8 @@ export default {
       // milk: '#F8F8F8',
       milk:'#f3f1ed',
       midnight: '#1F1F1F',
-      main:'#7a736d'
+      main:'#7a736d',
+      white: '#FFFFFF',
     },
 
     extend: {},
