@@ -5,12 +5,12 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link href="./why/immutable/assets/0.85113183.css" rel="stylesheet">
-		<link rel="modulepreload" href="./why/immutable/entry/start.d91485ec.js">
+		<link href="./why/immutable/assets/0.d43b3779.css" rel="stylesheet">
+		<link rel="modulepreload" href="./why/immutable/entry/start.03017c39.js">
 		<link rel="modulepreload" href="./why/immutable/chunks/index.5b6e22d2.js">
-		<link rel="modulepreload" href="./why/immutable/chunks/singletons.8a037286.js">
-		<link rel="modulepreload" href="./why/immutable/entry/app.0ec2f657.js">
-		<link rel="modulepreload" href="./why/immutable/nodes/0.955e06d3.js">
+		<link rel="modulepreload" href="./why/immutable/chunks/singletons.670b9e48.js">
+		<link rel="modulepreload" href="./why/immutable/entry/app.85f9aed3.js">
+		<link rel="modulepreload" href="./why/immutable/nodes/0.2d8213e3.js">
 		<link rel="modulepreload" href="./why/immutable/nodes/5.d4f1b61b.js"><title>About Us</title><!-- HEAD_svelte-iwcsbc_START --><!-- HEAD_svelte-iwcsbc_END -->
 	</head>
 	<body data-sveltekit-preload-data="hover">
@@ -18,7 +18,13 @@
 
 
 <nav class="navbar fixed z-10"><div class="flex-1"><a class="btn btn-ghost normal-case text-xl" href="./">Soft White</a></div>
-    <div class="flex-none"><div class="hidden md:flex"><a class="btn btn-ghost normal-case text-lg font-normal" href="./paint">Paint</a>
+    <div class="flex-none"><div class="dropdown dropdown-bottom dropdown-end"><label class="btn btn-square btn-ghost" tabindex="1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"></path></svg></label>
+            <ul class="dropdown-content menu p-2 bg-base-100" tabindex="1"><li><button class="btn w-48 btn-ghost" data-set-theme="softmilk">softmilk</button></li>
+                <li><button class="btn w-48 btn-ghost" data-set-theme="business">business</button></li>
+                <li><button class="btn w-48 btn-ghost" data-set-theme="dark">dark</button></li>
+                <li><button class="btn w-48 btn-ghost" data-set-theme="light">light</button></li></ul></div>
+
+        <div class="hidden md:flex"><a class="btn btn-ghost normal-case text-lg font-normal" href="./paint">Paint</a>
             <a class="btn btn-ghost normal-case font-normal text-lg" href="./program">Program</a>
             <a class="btn btn-ghost normal-case font-normal text-lg" href="./about">About us</a>
             <a class="btn btn-ghost normal-case font-normal text-lg" href="./contact">Contact</a></div>
@@ -26,7 +32,8 @@
             <ul class="dropdown-content menu p-2 bg-base-100" tabindex="0"><li><a class="btn w-48 btn-ghost" href="./paint">Paint</a></li>
                 <li><a class="btn w-48 btn-ghost" href="./program">Program</a></li>
                 <li><a class="btn w-48 btn-ghost" href="./about">About us</a></li>
-                <li><a class="btn w-48 btn-ghost" href="./contact">Contact</a></li></ul></div></div></nav>
+                <li><a class="btn w-48 btn-ghost" href="./contact">Contact</a></li></ul>
+            </div></div></nav>
 
 
 
@@ -78,7 +85,7 @@
 			
 			<script>
 				{
-					__sveltekit_2zkckz = {
+					__sveltekit_1843piw = {
 						assets: "/softwhite-homepage-svelte",
 						base: new URL(".", location).pathname.slice(0, -1),
 						env: {}
@@ -89,8 +96,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./why/immutable/entry/start.d91485ec.js"),
-						import("./why/immutable/entry/app.0ec2f657.js")
+						import("./why/immutable/entry/start.03017c39.js"),
+						import("./why/immutable/entry/app.85f9aed3.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 5],

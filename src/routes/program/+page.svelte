@@ -4,6 +4,11 @@
 	
 </svelte:head>
 
+<script>
+
+</script>
+
+
 <div class="min-h-screen relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
 	<main class="flex flex-row p-16 justify-start">
 		<article class="prose prose-stone">
