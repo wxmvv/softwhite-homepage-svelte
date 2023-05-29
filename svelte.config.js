@@ -36,7 +36,6 @@ const config = {
 		},
 		appDir: 'why',
 		//默认_app github page无法识别
-
     }
 };
 
