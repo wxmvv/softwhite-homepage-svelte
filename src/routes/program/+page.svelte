@@ -1,6 +1,6 @@
 <!-- about page -->
 <svelte:head>
-	<title>About Us</title>
+	<title>Program</title>
 	
 </svelte:head>
 

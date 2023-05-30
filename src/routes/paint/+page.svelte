@@ -1,6 +1,6 @@
 <!-- about page -->
 <svelte:head>
-    <title>About Us</title>
+    <title>Paint</title>
 </svelte:head>
 
 	<div class="bg-base-100">
