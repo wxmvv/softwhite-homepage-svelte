@@ -4,87 +4,94 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
-		<meta http-equiv="content-security-policy" content="">
-		<link href="./why/immutable/assets/0.b57c02fb.css" rel="stylesheet">
-		<link rel="modulepreload" href="./why/immutable/entry/start.283b3f28.js">
-		<link rel="modulepreload" href="./why/immutable/chunks/index.f177bbcb.js">
-		<link rel="modulepreload" href="./why/immutable/chunks/singletons.0bf18b21.js">
-		<link rel="modulepreload" href="./why/immutable/entry/app.0b4beec6.js">
-		<link rel="modulepreload" href="./why/immutable/nodes/0.cd234694.js">
-		<link rel="modulepreload" href="./why/immutable/nodes/5.2cfce5f0.js"><title>Paint</title><!-- HEAD_svelte-in2btx_START --><!-- HEAD_svelte-in2btx_END -->
+		
+		<link href="./why/immutable/assets/0.8fa764a7.css" rel="stylesheet">
+		<link rel="modulepreload" href="./why/immutable/entry/start.2f49fd25.js">
+		<link rel="modulepreload" href="./why/immutable/chunks/index.0bc85246.js">
+		<link rel="modulepreload" href="./why/immutable/chunks/singletons.0db44d64.js">
+		<link rel="modulepreload" href="./why/immutable/chunks/paths.d3e3f08a.js">
+		<link rel="modulepreload" href="./why/immutable/entry/app.6a442283.js">
+		<link rel="modulepreload" href="./why/immutable/nodes/0.35a63eac.js">
+		<link rel="modulepreload" href="./why/immutable/nodes/5.d8fc8e96.js"><title>Paint</title><!-- HEAD_svelte-in2btx_START --><!-- HEAD_svelte-in2btx_END -->
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
 
 
-<nav class="navbar fixed z-10"><div class="flex-1"><a class="btn btn-ghost normal-case text-xl" href="./">Soft White</a></div>
-	<div class="flex-none"><div class="dropdown dropdown-end"><label class="btn btn-square btn-ghost" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"></path></svg></label>
-  <div><ul class="menu dropdown-content w-56 h-[60vh] overflow-y-auto shadow-lg bg-base-100 grid grid-cols-1 p-4 gap-1" tabindex="0"><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="softmilk" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               🫧 softmilk</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="light" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               🌝  light</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="dark" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               🌚  dark</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="cupcake" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               🧁  cupcake</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="bumblebee" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               🐝  bumblebee</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="emerald" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               ✳️  Emerald</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="corporate" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               🏢  Corporate</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="synthwave" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               🌃  synthwave</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="retro" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               👴  retro</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="cyberpunk" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               🤖  cyberpunk</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="valentine" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               🌸  valentine</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="halloween" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               🎃  halloween</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="garden" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               🌷  garden</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="forest" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               🌲  forest</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="aqua" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               🐟  aqua</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="lofi" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               👓  lofi</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="pastel" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               🖍  pastel</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="fantasy" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               🧚‍♀️  fantasy</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="wireframe" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               📝  Wireframe</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="black" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               🏴  black</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="luxury" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               💎  luxury</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="dracula" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               🧛‍♂️  dracula</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="cmyk" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               🖨  CMYK</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="autumn" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               🍁  Autumn</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="business" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               💼  Business</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="acid" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               💊  Acid</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="lemonade" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               🍋  Lemonade</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="night" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               🌙  Night</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="coffee" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               ☕️  Coffee</button>
-        </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="winter" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
-               ❄️  Winter</button>
-        </li></ul></div></div>
-		<div class="hidden md:flex"><a class="btn btn-ghost normal-case text-lg font-normal" href="./paint">Paint</a>
-			<a class="btn btn-ghost normal-case font-normal text-lg" href="./program">Program</a>
-			<a class="btn btn-ghost normal-case font-normal text-lg" href="./about">About us</a>
-			<a class="btn btn-ghost normal-case font-normal text-lg" href="./contact">Contact</a></div>
-		<div class="md:hidden dropdown dropdown-bottom dropdown-end"><label class="btn btn-square btn-ghost" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></label>
+<nav class="navbar fixed z-10"><div class="flex-1"><a class="btn btn-ghost normal-case text-xl" href="/softwhite-homepage-svelte/">Soft White</a></div>
+	<div class="flex-none">
+		<div class="dropdown dropdown-end">
+			<label class="btn btn-square btn-ghost" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"></path></svg></label>
+			<div>
+			  <ul class="menu dropdown-content w-56 h-[60vh] overflow-y-auto shadow-lg bg-base-100 grid grid-cols-1 p-4 gap-1" tabindex="0"><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="softmilk" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 🫧 softmilk</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="light" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 🌝  light</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="dark" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 🌚  dark</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="cupcake" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 🧁  cupcake</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="bumblebee" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 🐝  bumblebee</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="emerald" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 ✳️  Emerald</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="corporate" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 🏢  Corporate</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="synthwave" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 🌃  synthwave</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="retro" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 👴  retro</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="cyberpunk" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 🤖  cyberpunk</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="valentine" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 🌸  valentine</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="halloween" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 🎃  halloween</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="garden" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 🌷  garden</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="forest" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 🌲  forest</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="aqua" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 🐟  aqua</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="lofi" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 👓  lofi</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="pastel" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 🖍  pastel</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="fantasy" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 🧚‍♀️  fantasy</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="wireframe" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 📝  Wireframe</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="black" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 🏴  black</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="luxury" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 💎  luxury</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="dracula" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 🧛‍♂️  dracula</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="cmyk" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 🖨  CMYK</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="autumn" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 🍁  Autumn</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="business" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 💼  Business</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="acid" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 💊  Acid</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="lemonade" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 🍋  Lemonade</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="night" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 🌙  Night</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="coffee" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 ☕️  Coffee</button>
+				  </li><li class="flex flex-row"><button class="btn hover:bg-neutral hover:text-neutral-content w-48 btn-ghost justify-start" data-set-theme="winter" data-act-class="[&_svg]:visible"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 invisible"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"></path></svg>
+						 ❄️  Winter</button>
+				  </li></ul></div></div>
+		<div class="hidden md:flex"><a class="btn btn-ghost normal-case text-lg font-normal" href="/softwhite-homepage-svelte/paint">Paint</a>
+			<a class="btn btn-ghost normal-case font-normal text-lg" href="/softwhite-homepage-svelte/program">Program</a>
+			<a class="btn btn-ghost normal-case font-normal text-lg" href="/softwhite-homepage-svelte/about">About us</a>
+			<a class="btn btn-ghost normal-case font-normal text-lg" href="/softwhite-homepage-svelte/contact">Contact</a></div>
+		<div class="md:hidden dropdown dropdown-bottom dropdown-end">
+			
+			<label class="btn btn-square btn-ghost" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></label>
+			
 			<ul class="dropdown-content menu p-2 bg-base-100" tabindex="0"><li><a class="btn w-48 btn-ghost" href="./paint">Paint</a></li>
 				<li><a class="btn w-48 btn-ghost" href="./program">Program</a></li>
 				<li><a class="btn w-48 btn-ghost" href="./about">About us</a></li>
@@ -141,10 +148,10 @@
 			
 			<script>
 				{
-					__sveltekit_9vsr = {
+					__sveltekit_129xcu = {
 						assets: "/softwhite-homepage-svelte",
 						base: new URL(".", location).pathname.slice(0, -1),
-						env: {}
+						env: {"PUBLIC_DEV_BASE_URL":"http://127.0.0.1:8080","PUBLIC_PROD_BASE_URL":"https://wxmvv.github.io/softwhite-homepage-svelte"}
 					};
 
 					const element = document.currentScript.parentElement;
@@ -152,8 +159,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./why/immutable/entry/start.283b3f28.js"),
-						import("./why/immutable/entry/app.0b4beec6.js")
+						import("./why/immutable/entry/start.2f49fd25.js"),
+						import("./why/immutable/entry/app.6a442283.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 5],

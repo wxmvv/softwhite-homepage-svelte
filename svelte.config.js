@@ -1,4 +1,5 @@
 // import adapter from '@sveltejs/adapter-auto';
+// import { base } from '$service-worker';
 import adapter from '@sveltejs/adapter-static';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -18,6 +19,7 @@ const config = {
 	// }
 	// publicPath:"/softwhite-homepage-svelte/",
 	// publicPath:"./",
+
 	kit: {
         adapter: adapter({
             // default options are shown. On some platforms
@@ -36,6 +38,7 @@ const config = {
 		},
 		appDir: 'why',
 		//默认_app github page无法识别
+
     }
 };
 
