@@ -1,19 +1,17 @@
 <script>
 	import '../app.css';
 	import { base } from '$app/paths'
-	// import ThemeChangeButton from '../components/ThemeChange.svelte';
+
 	import { onMount } from 'svelte';
 	import { themeChange } from 'theme-change';
 	import { themes } from '../lib/data.js';
 
-	// NOTE: the element that is using one of the theme attributes must be in the DOM on mount
 	onMount(() => {
 		themeChange(false);
-		// 👆 false parameter is required for svelte
 	});
 </script>
 
-<nav class="navbar fixed z-10">
+<nav class="navbar fixed z-10 bg-base-100">
 	<div class="flex-1">
 		<a class="btn btn-ghost normal-case text-xl" href="{base}/">Soft White</a>
 	</div>
@@ -77,6 +75,7 @@
 			</label>
 			<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 			<ul class="dropdown-content menu p-2 bg-base-100" tabindex="0">
+				<li><a class="btn w-48 btn-ghost" href="{base}/">Home</a></li>
 				<li><a class="btn w-48 btn-ghost" href="{base}/paint">Paint</a></li>
 				<li><a class="btn w-48 btn-ghost" href="{base}/program">Program</a></li>
 				<li><a class="btn w-48 btn-ghost" href="{base}/about">About us</a></li>
