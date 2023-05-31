@@ -77,10 +77,10 @@
 			</label>
 			<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 			<ul class="dropdown-content menu p-2 bg-base-100" tabindex="0">
-				<li><a class="btn w-48 btn-ghost" href="./paint">Paint</a></li>
-				<li><a class="btn w-48 btn-ghost" href="./program">Program</a></li>
-				<li><a class="btn w-48 btn-ghost" href="./about">About us</a></li>
-				<li><a class="btn w-48 btn-ghost" href="./contact">Contact</a></li>
+				<li><a class="btn w-48 btn-ghost" href="{base}/paint">Paint</a></li>
+				<li><a class="btn w-48 btn-ghost" href="{base}/program">Program</a></li>
+				<li><a class="btn w-48 btn-ghost" href="{base}/about">About us</a></li>
+				<li><a class="btn w-48 btn-ghost" href="{base}/contact">Contact</a></li>
 			</ul>
 			<!-- <button class="btn btn-ghost" data-set-theme="dark">dark</button> -->
 		</div>
@@ -92,8 +92,8 @@
 <footer class="footer footer-center p-8 text-base-content rounded">
 	<div>
 		<div class="flex flex-row gap-6">
-			<a class="link link-hover" href="./about">About us</a>
-			<a class="link link-hover" href="./contact">Contact</a>
+			<a class="link link-hover" href="{base}/about">About us</a>
+			<a class="link link-hover" href="{base}/contact">Contact</a>
 		</div>
 		<p>Copyright © 2023 - All right reserved by 舒白文化</p>
 	</div>
