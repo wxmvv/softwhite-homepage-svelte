@@ -1,18 +1,3 @@
-export let siteStats = {
-  components: "49",
-  themes: "29",
-  githubStars: "+18,000",
-  npmInstalls: "+3,000,000",
-}
-
-export let siteData = {
-  title: "Tailwind CSS Components",
-  desc: "Free Tailwind Components",
-  card: "/images/default.jpg",
-}
-
-export let pagesThatDontNeedSidebar = ["/"]
-
 export let themes = [
   {
     name: "🫧 softmilk",
@@ -135,6 +120,43 @@ export let themes = [
     id: "winter",
   },
 ]
+
+
+export let paints = [
+  {
+    largeherf: "./diary_sketching/1_20221201.jpg",
+    smallsrc: "./diary_sketching/1_20221201.jpg",
+    width: 570,
+    height: 720,
+    alt: 'test image 1'
+  },
+  {
+    largeherf: "./diary_sketching/2_20221201.jpg",
+    smallsrc: "./diary_sketching/2_20221201.jpg",
+    width: 570,
+    height: 720,
+    alt: 'test image 2'
+  }
+]
+
+
+
+
+export let siteStats = {
+  components: "49",
+  themes: "29",
+  githubStars: "+18,000",
+  npmInstalls: "+3,000,000",
+}
+
+export let siteData = {
+  title: "Tailwind CSS Components",
+  desc: "Free Tailwind Components",
+  card: "/images/default.jpg",
+}
+
+export let pagesThatDontNeedSidebar = ["/"]
+
 
 export let exampleRepos = [
   {
