@@ -1,7 +1,6 @@
 <script>
 	import '../app.css';
 	import { base } from '$app/paths';
-	// export const prerender = true
 
 	import { onMount } from 'svelte';
 	import { themeChange } from 'theme-change';

@@ -52,9 +52,12 @@
 				// @ts-ignore
 				progress_num = e;
 				// @ts-ignore
-				progress_num_css = '--value:' + e.progress + ';--size:4rem;--thickness:2px;';
+				progress_num_css = '--value:' + e.progress;
 
 		});
+		// sl.addEventListener('trueLoadFinish',()=>{
+			// progress_num = 100;
+		// })
 		sl.addEventListener('countComplete', () => {
 			console.log('complete');
 			hide_progress();
@@ -71,7 +74,7 @@
 </svelte:head>
 
 <div class="bg-base-100 min-h-screen">
-	<div bind:this={progress} class="radial-progress fixed z-20 top-16 left-0 md:left-6" style={progress_num_css}>{progress_num}</div>
+	<div bind:this={progress} class="radial-progress text-xs fixed z-20 top-16 left-0 md:left-6" style={progress_num_css};--size:3rem;--thickness:1px;>{progress_num}</div>
 	<div class=" mx-auto max-w-2xl px-16 py-24 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-16 ">
 		<article class="prose prose-stone">
 			<h1>绘画</h1>
