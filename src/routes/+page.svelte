@@ -3,10 +3,7 @@
     <title>softwhite</title>
 </svelte:head>
 <script>
-    let a = 1
-    function b () {
-        a+=1
-    }
+
 </script>
 
 <main class="flex flex-row justify-center bg-base-100">

@@ -19,7 +19,8 @@ const config = {
 	// }
 	// publicPath:"/softwhite-homepage-svelte/",
 	// publicPath:"./",
-
+//TODO:修改build路径为docs
+//https://kit.svelte.dev/docs/configuration
 	kit: {
         adapter: adapter({
             // default options are shown. On some platforms
@@ -32,6 +33,7 @@ const config = {
         }),
 		alias:	{
           "@lib": path.resolve("./src/lib"),
+		  "@components": path.resolve("./src/components"),
 		},
 		paths:{
 			//github page使用

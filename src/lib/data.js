@@ -121,7 +121,7 @@ export let themes = [
   },
 ]
 
-
+//TODO: 添加绘画文件
 export let paints = [
   {
     largeherf: "./diary_sketching/1_20221201.jpg",
