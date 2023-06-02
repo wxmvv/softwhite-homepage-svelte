@@ -42,26 +42,25 @@
 				sources: [
 					{
 						sourceType: 'image',
-						selectors: ['img']
+						selectors: ['.selected']
 					}
 				]
 			}
 		]);
 		sl.setTargetTextDom('.radial-progress');
 		sl.addEventListener('progress', (e) => {
-			if (e === undefined) {
-			} else {
 				// @ts-ignore
 				progress_num = e;
 				// @ts-ignore
-				progress_num_css = '--value:' + e.progress + ';' + '--size:4rem;--thickness:2px;';
-			}
-			console.log(progress_num_css);
+				progress_num_css = '--value:' + e.progress + ';--size:4rem;--thickness:2px;';
+
 		});
 		sl.addEventListener('countComplete', () => {
 			console.log('complete');
 			hide_progress();
 		});
+		sl.progressSpeed = 50;
+		sl.needSpeedUp = true;
 		sl.startLoad();
 	});
 </script>
@@ -71,9 +70,9 @@
 	<title>Paint</title>
 </svelte:head>
 
-<div class="bg-base-100">
+<div class="bg-base-100 min-h-screen">
 	<div bind:this={progress} class="radial-progress fixed z-20 top-16 left-0 md:left-6" style={progress_num_css}>{progress_num}</div>
-	<div class=" mx-auto max-w-2xl px-16 py-24 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-16">
+	<div class=" mx-auto max-w-2xl px-16 py-24 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-16 ">
 		<article class="prose prose-stone">
 			<h1>绘画</h1>
 			<div />
@@ -83,7 +82,7 @@
 				<div class="group">
 					<div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
 						<a href={paint.largeherf} data-pswp-width={paint.width} data-pswp-height={paint.height} target="_blank">
-							<img src={paint.smallsrc} alt={paint.alt} class="h-full w-full object-cover object-center group-hover:opacity-75" />
+							<img src={paint.smallsrc} alt={paint.alt} class="selected h-full w-full object-cover object-center group-hover:opacity-75" />
 						</a>
 					</div>
 					<h3 class="mt-4 text-sm text-gray-700">{paint.alt}</h3>

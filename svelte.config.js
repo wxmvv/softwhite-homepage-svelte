@@ -19,14 +19,15 @@ const config = {
 	// }
 	// publicPath:"/softwhite-homepage-svelte/",
 	// publicPath:"./",
-//TODO:修改build路径为docs
+//MARK:修改build路径为docs
 //https://kit.svelte.dev/docs/configuration
+//https://juejin.cn/post/7074763535472918565
 	kit: {
         adapter: adapter({
             // default options are shown. On some platforms
             // these options are set automatically — see below
-            pages: 'build',
-            assets: 'build',
+            pages: 'docs',
+            assets: 'docs',
             fallback: null,
             precompress: false,
             strict: true
@@ -41,9 +42,8 @@ const config = {
 			//默认使用
 			// base: "./"
 		},
-		appDir: 'why',
+		appDir: 'why'
 		//默认_app github page无法识别
-
     }
 };
 
