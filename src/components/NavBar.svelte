@@ -1,6 +1,6 @@
 <script>
+	import '../app.css';
 	import { base } from '$app/paths';
-
 	import { onMount } from 'svelte';
 	import { themeChange } from 'theme-change';
 	import { themes } from '@lib/data.js';

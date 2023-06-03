@@ -1,5 +1,6 @@
 <script>
-    	import { base } from '$app/paths';
+	import '../app.css';
+    import { base } from '$app/paths';
 </script>
 <footer class="footer footer-center p-8 text-base-content rounded">
 	<div>
