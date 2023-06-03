@@ -1,12 +1,8 @@
 <script>
-	// import Viewer from 'viewerjs';
-	// import 'viewerjs/dist/viewer.css';
-
 	import { onMount } from 'svelte';
 	// @ts-ignore
 	import PhotoSwipeLightbox from 'photoswipe/lightbox';
 	import 'photoswipe/style.css';
-
 	import { paints } from '@lib/data.js';
 
 	/**
