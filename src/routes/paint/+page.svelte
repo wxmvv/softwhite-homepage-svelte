@@ -7,7 +7,7 @@
 	import PhotoSwipeLightbox from 'photoswipe/lightbox';
 	import 'photoswipe/style.css';
 	import { paints } from '@lib/data.js';
-	export let galleryID = 'test';
+	export let galleryID = 'gallery';
 	const leftArrowSVGString = '<svg aria-hidden="true" class="pswp__icn" viewBox="0 0 100 125" width="100" height="125"><path d="M5,50L50,5l3,3L11,50l42,42l-3,3L5,50z M92,95l3-3L53,50L95,8l-3-3L47,50L92,95z"/></svg>';
 
 	// import PhotoSwipe from 'photoswipe/dist/photoswipe.esm.js';
@@ -25,12 +25,19 @@
 			progress.classList.add('hidden');
 		}
 	};
+	function isPhonePortrait() {
+		return window.matchMedia('(max-width: 600px) and (orientation: portrait)').matches;
+	}
 	onMount(() => {
 		//MARK:photoswipe图片预览2
 		//https://github.com/dimsemenov/photoswipe
 		const options = {
-			arrowPrevSVG: leftArrowSVGString,
-  			arrowNextSVG: leftArrowSVGString,
+			// arrowPrevSVG: leftArrowSVGString,
+			// arrowNextSVG: leftArrowSVGString,
+			bgOpacity: 0.6,
+			showHideAnimationType: 'fade',
+			// initialZoomLevel: 'fill',
+			secondaryZoomLevel: 1.5,
 			// zoom: false,
 			// close: false,
 			// counter: false,
@@ -57,8 +64,9 @@
 		sl.setTargetTextDom('.radial-progress');
 		sl.addEventListener('progress', (e) => {
 			if (e === undefined) {
-				console.log("undefined+"+e);
-				progress_num = 100;
+				console.log('undefined+' + e);
+				// progress_num = 100;
+				hide_progress();
 			} else {
 				console.log(e);
 				// @ts-ignore
@@ -96,6 +104,7 @@
 			{#each paints as paint}
 				<div class="group">
 					<div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+						<!-- data-pswp-width={paint.width} data-pswp-height={paint.height} -->
 						<a href={paint.largeherf} data-pswp-width={paint.width} data-pswp-height={paint.height} target="_blank">
 							<img src={paint.smallsrc} alt={paint.alt} class="selected h-full w-full object-cover object-center group-hover:opacity-75" />
 						</a>
