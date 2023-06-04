@@ -57,6 +57,7 @@
 		sl.setTargetTextDom('.radial-progress');
 		sl.addEventListener('progress', (e) => {
 			if (e === undefined) {
+				console.log("undefined+"+e);
 				progress_num = 100;
 			} else {
 				console.log(e);
