@@ -1,33 +1,44 @@
 <script>
 	import { onMount } from 'svelte';
+
+	//MARK:photoswipe图片预览1
+
 	// @ts-ignore
 	import PhotoSwipeLightbox from 'photoswipe/lightbox';
 	import 'photoswipe/style.css';
 	import { paints } from '@lib/data.js';
-
-	/**
-	 * @type {string}
-	 */
 	export let galleryID = 'test';
+	const leftArrowSVGString = '<svg aria-hidden="true" class="pswp__icn" viewBox="0 0 100 125" width="100" height="125"><path d="M5,50L50,5l3,3L11,50l42,42l-3,3L5,50z M92,95l3-3L53,50L95,8l-3-3L47,50L92,95z"/></svg>';
+
+	// import PhotoSwipe from 'photoswipe/dist/photoswipe.esm.js';
+
 	//MARK:siteloder加载相关1
 	import SiteLoader from 'siteloader';
 	let progress_num = 0;
 	let progress_num_css = '';
 	/**
-	 * @type {HTMLDivElement}
+	 * @type {HTMLDivElement | null}
 	 */
-	let progress;
+	let progress = null;
 	let hide_progress = () => {
-		progress.classList.add('hidden');
+		if (progress !== null) {
+			progress.classList.add('hidden');
+		}
 	};
 	onMount(() => {
-		//MARK:photoswipe图片预览
+		//MARK:photoswipe图片预览2
 		//https://github.com/dimsemenov/photoswipe
-		let lightbox = new PhotoSwipeLightbox({
+		const options = {
+			arrowPrevSVG: leftArrowSVGString,
+  			arrowNextSVG: leftArrowSVGString,
+			// zoom: false,
+			// close: false,
+			// counter: false,
 			gallery: '#' + galleryID,
 			children: 'a',
 			pswpModule: () => import('photoswipe')
-		});
+		};
+		const lightbox = new PhotoSwipeLightbox(options);
 		lightbox.init();
 
 		//MARK:siteloder加载相关2
@@ -45,14 +56,18 @@
 		]);
 		sl.setTargetTextDom('.radial-progress');
 		sl.addEventListener('progress', (e) => {
+			if (e === undefined) {
+				progress_num = 100;
+			} else {
+				console.log(e);
 				// @ts-ignore
-				progress_num = e;
+				progress_num = e.progress;
 				// @ts-ignore
 				progress_num_css = '--value:' + e.progress;
-
+			}
 		});
 		// sl.addEventListener('trueLoadFinish',()=>{
-			// progress_num = 100;
+		// progress_num = 100;
 		// })
 		sl.addEventListener('countComplete', () => {
 			console.log('complete');
@@ -70,8 +85,8 @@
 </svelte:head>
 
 <div class="bg-base-100 min-h-screen">
-	<div bind:this={progress} class="radial-progress text-xs fixed z-20 top-16 left-0 md:left-6" style={progress_num_css};--size:3rem;--thickness:1px;>{progress_num}</div>
-	<div class=" mx-auto max-w-2xl px-16 py-24 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-16 ">
+	<div bind:this={progress} class="radial-progress text-xs fixed z-20 top-16 left-0 md:left-6" style="{progress_num_css};--size:3rem;--thickness:1px;">{progress_num}</div>
+	<div class=" mx-auto max-w-2xl px-16 py-24 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-16">
 		<article class="prose prose-stone">
 			<h1>绘画</h1>
 			<div />
