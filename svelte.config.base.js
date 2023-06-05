@@ -43,11 +43,7 @@ const config = {
 		  "@components": path.resolve("./src/components"),
 		},
 		paths:{
-			//github page使用
-			base: "/softwhite-homepage-svelte"
-			// base: process.env.BASE_PATH?"/softwhite-homepage-svelte":""
-			//默认使用
-			// base: ""
+			base: ""
 		},
 		appDir: 'why'
 		//默认_app github page无法识别
