@@ -3,9 +3,9 @@
     <title>Contact</title>
 </svelte:head>
 
-<main class="min-h-screen flex flex-row p-16 items-center justify-start bg-base-100">
+<main class="min-h-screen flex flex-row pt-16 sm:pt-24 lg:pt-32 bg-base-100">
 	<!-- <nav class="navbar bg-base-100" /> -->
-	<article class="prose prose-stone">
+	<article class="prose p-16 prose-stone justify-start">
 		<h1>联系我们</h1>
         <a href="mailto:wxmvv@outlook.com" class="btn btn-ghost">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-3">

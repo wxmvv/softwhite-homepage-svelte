@@ -11,7 +11,7 @@ import { base } from '$app/paths'
 </script>
 
 
-<div class="min-h-screen relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
+<div class="min-h-screen relative isolate overflow-hidden pt-16 sm:pt-24 lg:pt-32">
 	<main class="flex flex-row p-16 justify-start">
 		<article class="prose prose-stone">
 			<h1>程序开发</h1>

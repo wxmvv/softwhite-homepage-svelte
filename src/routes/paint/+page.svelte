@@ -2,16 +2,12 @@
 	import { onMount } from 'svelte';
 
 	//MARK:photoswipe图片预览1
-
 	// @ts-ignore
 	import PhotoSwipeLightbox from 'photoswipe/lightbox';
 	import 'photoswipe/style.css';
 	import { paints } from '@lib/data.js';
 	export let galleryID = 'gallery';
 	const leftArrowSVGString = '<svg aria-hidden="true" class="pswp__icn" viewBox="0 0 100 125" width="100" height="125"><path d="M5,50L50,5l3,3L11,50l42,42l-3,3L5,50z M92,95l3-3L53,50L95,8l-3-3L47,50L92,95z"/></svg>';
-
-	// import PhotoSwipe from 'photoswipe/dist/photoswipe.esm.js';
-
 	//MARK:siteloder加载相关1
 	import SiteLoader from 'siteloader';
 	let progress_num = 0;
@@ -38,16 +34,15 @@
 			showHideAnimationType: 'fade',
 			// initialZoomLevel: 'fill',
 			secondaryZoomLevel: 1.5,
-			// zoom: false,
+			zoom: false,
 			// close: false,
-			// counter: false,
+			counter: false,
 			gallery: '#' + galleryID,
 			children: 'a',
 			pswpModule: () => import('photoswipe')
 		};
 		const lightbox = new PhotoSwipeLightbox(options);
 		lightbox.init();
-
 		//MARK:siteloder加载相关2
 		//https://github.com/Yinglinhan/siteloader
 		const sl = new SiteLoader([
@@ -62,28 +57,26 @@
 			}
 		]);
 		sl.setTargetTextDom('.radial-progress');
+		sl.addEventListener('beforeStart', () => {
+			console.log('Image loading...');
+		});
 		sl.addEventListener('progress', (e) => {
 			if (e === undefined) {
-				console.log('undefined+' + e);
-				// progress_num = 100;
 				hide_progress();
 			} else {
-				console.log(e);
+				// console.log(e);
 				// @ts-ignore
 				progress_num = e.progress;
 				// @ts-ignore
 				progress_num_css = '--value:' + e.progress;
 				// @ts-ignore
-				if(e.progress===100){
+				if (e.progress === 100) {
 					hide_progress();
 				}
 			}
 		});
-		// sl.addEventListener('trueLoadFinish',()=>{
-		// progress_num = 100;
-		// })
 		sl.addEventListener('countComplete', () => {
-			console.log('complete');
+			console.log('Image load complete!');
 			hide_progress();
 		});
 		sl.progressSpeed = 50;
