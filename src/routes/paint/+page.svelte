@@ -113,7 +113,6 @@
 					<!-- <p class="mt-1 text-lg font-medium text-gray-900">$48</p> -->
 				</div>
 			{/each}
-
 			<!-- More products... -->
 		</div>
 	</div>
