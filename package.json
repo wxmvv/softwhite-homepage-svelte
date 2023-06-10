@@ -19,7 +19,7 @@
 		"@tailwindcss/aspect-ratio": "^0.4.2",
 		"@tailwindcss/typography": "^0.5.9",
 		"autoprefixer": "^10.4.14",
-		"daisyui": "^3.0.20",
+		"daisyui": "^3.0.23",
 		"eslint": "^8.42.0",
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-plugin-svelte": "^2.30.0",

@@ -73,6 +73,10 @@
 				progress_num = e.progress;
 				// @ts-ignore
 				progress_num_css = '--value:' + e.progress;
+				// @ts-ignore
+				if(e.progress===100){
+					hide_progress();
+				}
 			}
 		});
 		// sl.addEventListener('trueLoadFinish',()=>{
