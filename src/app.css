@@ -4,13 +4,13 @@
 
 @font-face {
     font-family: 'PingFang';
-    src: url('./fonts/PingFang.woff');
+    src: url('/fonts/PingFang.woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'SFCompactRounded';
-    src: url('./fonts/SFCompactRounded.woff');
+    src: url('/fonts/SFCompactRounded.woff');
     font-weight: normal;
     font-style: normal;
 }
