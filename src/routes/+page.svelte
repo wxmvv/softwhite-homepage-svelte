@@ -15,18 +15,6 @@
 </main>
 
 <style>
-	@font-face {
-		font-family: 'PingFang';
-		src: url('./PingFang.woff');
-		font-weight: normal;
-		font-style: normal;
-	}
-	@font-face {
-		font-family: 'SFCompactRounded';
-		src: url('./SFCompactRounded.woff');
-		font-weight: normal;
-		font-style: normal;
-	}
 	.logo_cn {
 		font-family: 'PingFang';
 	}
