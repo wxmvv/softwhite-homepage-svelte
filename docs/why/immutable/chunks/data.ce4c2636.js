@@ -1,1 +1,0 @@
-let t=[{largeherf:"./diary_sketching/1_20221201.jpg",smallsrc:"./diary_sketching/1_20221201.jpg",width:540,height:720,alt:"test image 1"},{largeherf:"./diary_sketching/2_20221201.jpg",smallsrc:"./diary_sketching/2_20221201.jpg",width:640,height:853,alt:"test image 2"}],e=[{name:"🫧 softmilk",id:"softmilk"},{name:"🌃  synthwave",id:"synthwave"}];export{t as p,e as t};

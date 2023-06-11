@@ -1,19 +1,55 @@
 //TODO: 添加绘画文件
 export let paints = [
   {
-    largeherf: "./diary_sketching/1_20221201.jpg",
-    smallsrc: "./diary_sketching/1_20221201.jpg",
-    width: 540,
-    height: 720,
-    alt: 'test image 1'
+    largeherf: "./paints/生命.jpg",
+    smallsrc: "./paints/生命.jpg",
+    width: 2000,
+    height: 2000,
+    alt: '生命'
   },
   {
-    largeherf: "./diary_sketching/2_20221201.jpg",
-    smallsrc: "./diary_sketching/2_20221201.jpg",
+    largeherf: "./paints/小王子.jpg",
+    smallsrc: "./paints/小王子.jpg",
+    width: 1080,
+    height: 1440,
+    alt: '小王子'
+  },
+  {
+    largeherf: "./paints/和谐粉彩.jpg",
+    smallsrc: "./paints/和谐粉彩.jpg",
+    width: 1080,
+    height: 1472,
+    alt: '和谐粉彩'
+  },
+  {
+    largeherf: "./paints/diary_sketching_3.jpg",
+    smallsrc: "./paints/diary_sketching_3.jpg",
+    width: 659,
+    height: 540,
+    alt: '日常速写1'
+  },
+  {
+    largeherf: "./paints/diary_sketching_4.jpg",
+    smallsrc: "./paints/diary_sketching_4.jpg",
+    width: 720,
+    height: 540,
+    alt: '日常速写2'
+  },
+  {
+    largeherf: "./paints/diary_sketching_5.jpg",
+    smallsrc: "./paints/diary_sketching_5.jpg",
+    width: 540,
+    height: 720,
+    alt: '日常速写3'
+  },
+  {
+    largeherf: "./paints/diary_sketching_6.jpg",
+    smallsrc: "./paints/diary_sketching_6.jpg",
     width: 640,
     height: 853,
-    alt: 'test image 2'
-  }
+    alt: '日常速写4'
+  },
+
 ]
 
 export let themes = [
