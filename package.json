@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "vite dev",
+		"dev": "vite dev --host",
 		"build": "cp -f svelte.config.base.js svelte.config.js && vite build",
 		"build:github": "cp -f svelte.config.git.js svelte.config.js && vite build",
 		"preview": "vite preview",

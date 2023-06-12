@@ -11,10 +11,9 @@
 
 <nav class="navbar fixed z-10 bg-base-100">
 	<div class="navbar-start md:hidden" />
-	<div class="md:navbar-start">
+	<div class="navbar-center md:navbar-start ">
 		<a class="btn btn-ghost normal-case text-xl" href="{base}/">Soft White</a>
 	</div>
-	<div class="md:navbar-center md:flex" />
 	<div class="navbar-end">
 		<!-- themeChangebutton -->
 		<div class="dropdown dropdown-end">
