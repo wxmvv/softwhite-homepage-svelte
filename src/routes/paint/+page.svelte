@@ -1,29 +1,30 @@
 <script>
 	import { onMount } from 'svelte';
 
+	//TODO:loading
+	// https://kit.svelte.dev/docs/load
 	//MARK:photoswipe图片预览1
 	// @ts-ignore
 	import PhotoSwipeLightbox from 'photoswipe/lightbox';
 	import 'photoswipe/style.css';
 	import { paints } from '@lib/data.js';
 	export let galleryID = 'gallery';
-	const leftArrowSVGString = '<svg aria-hidden="true" class="pswp__icn" viewBox="0 0 100 125" width="100" height="125"><path d="M5,50L50,5l3,3L11,50l42,42l-3,3L5,50z M92,95l3-3L53,50L95,8l-3-3L47,50L92,95z"/></svg>';
 	//MARK:siteloder加载相关1
-	import SiteLoader from 'siteloader';
-	let progress_num = 0;
-	let progress_num_css = '';
-	/**
-	 * @type {HTMLDivElement | null}
-	 */
-	let progress = null;
-	let hide_progress = () => {
-		if (progress !== null) {
-			progress.classList.add('hidden');
-		}
-	};
-	function isPhonePortrait() {
-		return window.matchMedia('(max-width: 600px) and (orientation: portrait)').matches;
-	}
+	// import SiteLoader from 'siteloader';
+	// let progress_num = 0;
+	// let progress_num_css = '';
+	// /**
+	//  * @type {HTMLDivElement | null}
+	//  */
+	// let progress = null;
+	// let hide_progress = () => {
+	// 	if (progress !== null) {
+	// 		progress.classList.add('hidden');
+	// 	}
+	// };
+	// function isPhonePortrait() {
+	// 	return window.matchMedia('(max-width: 600px) and (orientation: portrait)').matches;
+	// }
 	onMount(() => {
 		//MARK:photoswipe图片预览2
 		//https://github.com/dimsemenov/photoswipe
@@ -45,43 +46,43 @@
 		lightbox.init();
 		//MARK:siteloder加载相关2
 		//https://github.com/Yinglinhan/siteloader
-		const sl = new SiteLoader([
-			{
-				// @ts-ignore
-				sources: [
-					{
-						sourceType: 'image',
-						selectors: ['.selected']
-					}
-				]
-			}
-		]);
-		sl.setTargetTextDom('.radial-progress');
-		sl.addEventListener('beforeStart', () => {
-			console.log('Image loading...');
-		});
-		sl.addEventListener('progress', (e) => {
-			if (e === undefined) {
-				hide_progress();
-			} else {
-				// console.log(e);
-				// @ts-ignore
-				progress_num = e.progress;
-				// @ts-ignore
-				progress_num_css = '--value:' + e.progress;
-				// @ts-ignore
-				if (e.progress === 100) {
-					hide_progress();
-				}
-			}
-		});
-		sl.addEventListener('countComplete', () => {
-			console.log('Image load complete!');
-			hide_progress();
-		});
-		sl.progressSpeed = 50;
-		sl.needSpeedUp = true;
-		sl.startLoad();
+		// const sl = new SiteLoader([
+		// 	{
+		// 		// @ts-ignore
+		// 		sources: [
+		// 			{
+		// 				sourceType: 'image',
+		// 				selectors: ['.selected']
+		// 			}
+		// 		]
+		// 	}
+		// ]);
+		// sl.setTargetTextDom('.radial-progress');
+		// sl.addEventListener('beforeStart', () => {
+		// 	console.log('Image loading...');
+		// });
+		// sl.addEventListener('progress', (e) => {
+		// 	if (e === undefined) {
+		// 		hide_progress();
+		// 	} else {
+		// 		// console.log(e);
+		// 		// @ts-ignore
+		// 		progress_num = e.progress;
+		// 		// @ts-ignore
+		// 		progress_num_css = '--value:' + e.progress;
+		// 		// @ts-ignore
+		// 		if (e.progress === 100) {
+		// 			hide_progress();
+		// 		}
+		// 	}
+		// });
+		// sl.addEventListener('countComplete', () => {
+		// 	console.log('Image load complete!');
+		// 	hide_progress();
+		// });
+		// sl.progressSpeed = 50;
+		// sl.needSpeedUp = true;
+		// sl.startLoad();
 	});
 </script>
 
@@ -91,7 +92,8 @@
 </svelte:head>
 
 <div class="bg-base-100 min-h-screen">
-	<div bind:this={progress} class="radial-progress text-xs fixed z-20 top-16 left-0 md:left-6" style="{progress_num_css};--size:3rem;--thickness:1px;">{progress_num}</div>
+	<!-- <div bind:this={progress} class="radial-progress text-xs fixed z-20 top-16 left-0 md:left-6" style="{progress_num_css};--size:3rem;--thickness:1px;">{progress_num}</div> -->
+
 	<div class=" mx-auto max-w-2xl px-16 py-24 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-16">
 		<article class="prose prose-stone">
 			<h1>绘画</h1>
