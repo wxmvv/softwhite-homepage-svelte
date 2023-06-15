@@ -12,6 +12,7 @@
 		<div class="logo_cn self-center relative bottom-6 text-7xl text-main">舒白</div>
 		<div class="self-center relative bottom-6 text-3xl text-main">Soft White</div>
 	</div>
+
 </main>
 
 <style>
