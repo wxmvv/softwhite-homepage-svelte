@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+    import { t } from '@lib/i18n.js';
 
 	//TODO:loading
 	// https://kit.svelte.dev/docs/load
@@ -96,7 +97,7 @@
 
 	<div class=" mx-auto max-w-2xl px-16 py-24 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-16">
 		<article class="prose prose-stone">
-			<h1>绘画</h1>
+			<h1>{$t("paint")}</h1>
 			<div />
 		</article>
 		<div id={galleryID} class="pswp-gallery grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">

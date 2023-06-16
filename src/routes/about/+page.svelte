@@ -2,13 +2,16 @@
 <svelte:head>
 	<title>About Us</title>
 </svelte:head>
+<script>
+  import { t } from '@lib/i18n.js';
+</script>
 
 <main class="min-h-screen flex flex-row bg-base-100 pt-16 sm:pt-24 lg:pt-32">
 	<article class="prose prose-stone p-16 justify-start">
-		<h1>关于我们：</h1>
-		<p>舒白文化成立于2023年5月的扬州。</p>
-    <p>“舒”代表柔软舒适，“白”代表纯洁无暇。</p>
-    <p>在这个充满压力，狂躁，焦虑的时代，我们希望能够带来片刻安宁、舒适。</p>
+		<h1>{$t("about us")}</h1>
+		<p>{$t("Shu Bai Culture was established in Yangzhou in May 2023.")}</p>
+    <p>{$t("”Shu“ stands for softness and comfort, and ”white“ stands for purity and flawlessness.")}</p>
+    <p>{$t("In this era of stress, mania and anxiety, we hope to bring a moment of peace and comfort.")}</p>
     <!-- <a href="http://baidu.com">baidu</a> -->
 		<!-- <h3>小伙伴们：</h3>
     <ul>
