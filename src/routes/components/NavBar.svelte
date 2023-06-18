@@ -1,18 +1,17 @@
 <script>
-// @ts-nocheck
-
 	import { base } from '$app/paths';
 	import { onMount } from 'svelte';
 	import { themeChange } from 'theme-change';
 	import { themes } from '@lib/data.js';
 
 	import { t } from '@lib/i18n.js';
+	/**
+	 * @type {any}
+	 */
 	export let toggleLang;
 	onMount(async () => {
 		themeChange(false);
 	});
-	
-
 </script>
 
 <nav class="navbar fixed z-10 bg-base-100">
@@ -23,7 +22,6 @@
 	<div class="navbar-end">
 		<!-- themeChangebutton -->
 		<div class="dropdown dropdown-end">
-	
 			<!-- svelte-ignore a11y-click-events-have-key-events -->
 			<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 			<!-- svelte-ignore a11y-label-has-associated-control -->
@@ -52,10 +50,10 @@
 		</label>
 
 		<div class="hidden md:flex">
-			<a class="btn btn-ghost normal-case text-lg font-normal" href="{base}/paint">{$t("paint")}</a>
-			<a class="btn btn-ghost normal-case font-normal text-lg" href="{base}/program">{$t("program")}</a>
-			<a class="btn btn-ghost normal-case font-normal text-lg" href="{base}/about">{$t("about us")}</a>
-			<a class="btn btn-ghost normal-case font-normal text-lg" href="{base}/contact">{$t("contact")}</a>
+			<a class="btn btn-ghost normal-case text-lg font-normal" href="{base}/paint">{$t('paint')}</a>
+			<a class="btn btn-ghost normal-case font-normal text-lg" href="{base}/program">{$t('program')}</a>
+			<a class="btn btn-ghost normal-case font-normal text-lg" href="{base}/about">{$t('about us')}</a>
+			<a class="btn btn-ghost normal-case font-normal text-lg" href="{base}/contact">{$t('contact')}</a>
 		</div>
 		<div class="md:hidden dropdown dropdown-bottom dropdown-end">
 			<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
@@ -65,18 +63,19 @@
 			</label>
 			<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 			<ul class="dropdown-content menu p-2 bg-base-100" tabindex="0">
-				<li><a class="btn w-48 btn-ghost content-center" href="{base}/">{$t("home")}</a></li>
-				<li><a class="btn w-48 btn-ghost content-center" href="{base}/paint">{$t("paint")}</a></li>
-				<li><a class="btn w-48 btn-ghost content-center" href="{base}/program">{$t("program")}</a></li>
-				<li><a class="btn w-48 btn-ghost content-center" href="{base}/about">{$t("about us")}</a></li>
-				<li><a class="btn w-48 btn-ghost content-center" href="{base}/contact">{$t("contact")}</a></li>
+				<li><a class="btn w-48 btn-ghost content-center" href="{base}/">{$t('home')}</a></li>
+				<li><a class="btn w-48 btn-ghost content-center" href="{base}/paint">{$t('paint')}</a></li>
+				<li><a class="btn w-48 btn-ghost content-center" href="{base}/program">{$t('program')}</a></li>
+				<li><a class="btn w-48 btn-ghost content-center" href="{base}/about">{$t('about us')}</a></li>
+				<li><a class="btn w-48 btn-ghost content-center" href="{base}/contact">{$t('contact')}</a></li>
 				<!-- svelte-ignore a11y-label-has-associated-control -->
 				<!-- svelte-ignore a11y-click-events-have-key-events -->
-				<li><label on:click={toggleLang} class="btn btn-square btn-ghost self-center w-48">
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-						<path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
-					</svg>
-				</label>
+				<li>
+					<label on:click={toggleLang} class="btn btn-square btn-ghost self-center w-48">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
+						</svg>
+					</label>
 				</li>
 			</ul>
 			<!-- <button class="btn btn-ghost" data-set-theme="dark">dark</button> -->

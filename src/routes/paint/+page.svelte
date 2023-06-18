@@ -1,8 +1,8 @@
 <script>
 	import { onMount } from 'svelte';
-    import { t } from '@lib/i18n.js';
+	import { t } from '@lib/i18n.js';
 
-	//TODO:loading
+	//MARK:loading
 	// https://kit.svelte.dev/docs/load
 	//MARK:photoswipe图片预览1
 	// @ts-ignore
@@ -10,28 +10,10 @@
 	import 'photoswipe/style.css';
 	import { paints } from '@lib/data.js';
 	export let galleryID = 'gallery';
-	//MARK:siteloder加载相关1
-	// import SiteLoader from 'siteloader';
-	// let progress_num = 0;
-	// let progress_num_css = '';
-	// /**
-	//  * @type {HTMLDivElement | null}
-	//  */
-	// let progress = null;
-	// let hide_progress = () => {
-	// 	if (progress !== null) {
-	// 		progress.classList.add('hidden');
-	// 	}
-	// };
-	// function isPhonePortrait() {
-	// 	return window.matchMedia('(max-width: 600px) and (orientation: portrait)').matches;
-	// }
 	onMount(() => {
 		//MARK:photoswipe图片预览2
 		//https://github.com/dimsemenov/photoswipe
 		const options = {
-			// arrowPrevSVG: leftArrowSVGString,
-			// arrowNextSVG: leftArrowSVGString,
 			bgOpacity: 0.6,
 			showHideAnimationType: 'fade',
 			// initialZoomLevel: 'fill',
@@ -45,45 +27,6 @@
 		};
 		const lightbox = new PhotoSwipeLightbox(options);
 		lightbox.init();
-		//MARK:siteloder加载相关2
-		//https://github.com/Yinglinhan/siteloader
-		// const sl = new SiteLoader([
-		// 	{
-		// 		// @ts-ignore
-		// 		sources: [
-		// 			{
-		// 				sourceType: 'image',
-		// 				selectors: ['.selected']
-		// 			}
-		// 		]
-		// 	}
-		// ]);
-		// sl.setTargetTextDom('.radial-progress');
-		// sl.addEventListener('beforeStart', () => {
-		// 	console.log('Image loading...');
-		// });
-		// sl.addEventListener('progress', (e) => {
-		// 	if (e === undefined) {
-		// 		hide_progress();
-		// 	} else {
-		// 		// console.log(e);
-		// 		// @ts-ignore
-		// 		progress_num = e.progress;
-		// 		// @ts-ignore
-		// 		progress_num_css = '--value:' + e.progress;
-		// 		// @ts-ignore
-		// 		if (e.progress === 100) {
-		// 			hide_progress();
-		// 		}
-		// 	}
-		// });
-		// sl.addEventListener('countComplete', () => {
-		// 	console.log('Image load complete!');
-		// 	hide_progress();
-		// });
-		// sl.progressSpeed = 50;
-		// sl.needSpeedUp = true;
-		// sl.startLoad();
 	});
 </script>
 
@@ -94,10 +37,9 @@
 
 <div class="bg-base-100 min-h-screen">
 	<!-- <div bind:this={progress} class="radial-progress text-xs fixed z-20 top-16 left-0 md:left-6" style="{progress_num_css};--size:3rem;--thickness:1px;">{progress_num}</div> -->
-
 	<div class=" mx-auto max-w-2xl px-16 py-24 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-16">
 		<article class="prose prose-stone">
-			<h1>{$t("paint")}</h1>
+			<h1>{$t('paint')}</h1>
 			<div />
 		</article>
 		<div id={galleryID} class="pswp-gallery grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">

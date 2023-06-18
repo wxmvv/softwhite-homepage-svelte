@@ -1,4 +1,4 @@
-//TODO: 添加绘画文件
+//MARK: 添加绘画文件
 export let paints = [
   {
     largeherf: "./paints/生命.jpg",
